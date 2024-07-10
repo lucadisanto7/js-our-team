@@ -30,3 +30,6 @@ const team = [
         foto: "barbara-ramos-graphic-designer.jpg"
     }
 ];
+team.forEach(member => {
+    console.log(`Nome: ${member.nome}, Ruolo: ${member.ruolo}, Foto: ${member.foto}`);
+});
