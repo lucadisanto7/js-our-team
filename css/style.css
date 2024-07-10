@@ -3,3 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h1 {
+    margin-bottom: 10px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #777;
+    text-align: center;
+    max-width: 600px;
+}
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+}
+.team-member h2 {
+    font-size: 1.2em;
+    margin: 10px 0 5px 0;
+}
+.team-member p {
+    margin: 0 0 10px 0;
+    color: #555;
+}
