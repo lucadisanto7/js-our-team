@@ -7,8 +7,7 @@ const team = [
     { nome: "Barbara Ramos", ruolo: "Graphic Designer", foto: "barbara-ramos-graphic-designer.jpg" }
 ];
 
-team.forEach(member => {
-    const memberInfo = document.createElement('div');
-    memberInfo.textContent = `Nome: ${member.nome}, Ruolo: ${member.ruolo}, Foto: ${member.foto}`;
-    teamContainer.appendChild(memberInfo);
-});
+    team.forEach((member, index) => {
+        document.getElementById(`name-${index + 1}`).textContent = member.nome;
+        document.getElementById(`role-${index + 1}`).textContent = member.ruolo;
+    });
